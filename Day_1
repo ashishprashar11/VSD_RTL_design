@@ -1,0 +1,9 @@
+Introduction: 
+Simulator : Tool used to check a design. RTL is implentation of spec and adherence to spec is checked using the tool Iwave (SIMULATOR)
+Testbench: To ensure design adhere to specified specification, need to apply stimulus to design to check functionality For ever change in input, output is evaluated. If no change inm input, no evaluation happens
+eg: AND gate, 2 inputs one output. for boh 2 inputs need to applly input and check the output. We need both stimulus generator and observer.
+Iverilog simulation flow:
+Design >> write TB >>>iVerilog >>> output be VCD file (VALUE CHANGE DUMP) -> USe GTK wave tool to see waveform 
+Now will see how to work with iverilog and GTWAVE
+Load design in i verilog
+USe command iverilog <File_name.v> <TB_for_File_name.v>
