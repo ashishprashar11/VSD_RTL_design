@@ -7,4 +7,4 @@ Design >> write TB >>>iVerilog >>> output be VCD file (VALUE CHANGE DUMP) -> USe
 Now will see how to work with iverilog and GTWAVE
 Load design in i verilog
 Use command iverilog <File_name.v> <TB_for_File_name.v>
-![image alt](https://github.com/ashishprashar11/VSD_RTL_design/blob/8c3bb407372aeb93b8a10ef09e9def1783b4311f/image.png)
+![My image](https://github.com/ashishprashar11/VSD_RTL_design/blob/8c3bb407372aeb93b8a10ef09e9def1783b4311f/image.png)
