@@ -8,9 +8,9 @@ Now will see how to work with iverilog and GTWAVE
 Load design in i verilog
 Use command iverilog <File_name.v> <TB_for_File_name.v>
 
-![image](https://github.com/ashishprashar11/VSD_RTL_design/blob/85cb50a15c1d15b98730a87e11c5c15b917514c4/untitled1.png)
+![image](https://github.com/ashishprashar11/VSD_RTL_design/raw/85cb50a15c1d15b98730a87e11c5c15b917514c4/untitled1.png)
 
 Use gtkwave to see the waveform 
 
-![image](https://github.com/ashishprashar11/VSD_RTL_design/blob/3416cbf2b0c4b90ef7d0002751a122974490154f/untitled2.png)
+![image](https://github.com/ashishprashar11/VSD_RTL_design/raw/3416cbf2b0c4b90ef7d0002751a122974490154f/untitled2.png)
 
