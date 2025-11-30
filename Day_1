@@ -12,5 +12,6 @@ Use command iverilog <File_name.v> <TB_for_File_name.v>
 
 Use gtkwave to see the waveform 
 
-![image](https://github.com/ashishprashar11/VSD_RTL_design/assets/3416cbf2b0c4b90ef7d0002751a122974490154f)
+
+![image](https://github.com/ashishprashar11/VSD_RTL_design/blob/435af94967bab1cf61842bbb96185ac3306ceb5e/untitled2.png)
 
