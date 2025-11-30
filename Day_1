@@ -6,4 +6,4 @@ Iverilog simulation flow:
 Design >> write TB >>>iVerilog >>> output be VCD file (VALUE CHANGE DUMP) -> USe GTK wave tool to see waveform 
 Now will see how to work with iverilog and GTWAVE
 Load design in i verilog
-USe command iverilog <File_name.v> <TB_for_File_name.v>
+Use command iverilog <File_name.v> <TB_for_File_name.v>
