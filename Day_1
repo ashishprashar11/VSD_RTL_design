@@ -9,4 +9,5 @@ Load design in i verilog
 Use command iverilog <File_name.v> <TB_for_File_name.v>
 ![image](https://github.com/ashishprashar11/VSD_RTL_design/blob/8c3bb407372aeb93b8a10ef09e9def1783b4311f/image.png)
 use gtkwave to see the waveform 
+![image](https://github.com/ashishprashar11/VSD_RTL_design/blob/176e1f6cb2f0de954e4aa181d2556d3362fb4d67/Untitled2.png)
 
