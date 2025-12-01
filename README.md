@@ -89,3 +89,12 @@ In message it will print the info of input , outputs and cells used i.e mux here
 
 Use *show* to see reqized logic 
 ![image](show.png)
+
+
+Now will see how Netlist looks
+use __write_verilog <name>__ and to open use __!gvim <name>__
+![image](writeverilog.png)
+
+It have lot of info now will use one swich to ge more shorted netlist
+use **write_verilog -noattr <name>**
+![image](attr.png)
