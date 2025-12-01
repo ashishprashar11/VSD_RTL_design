@@ -58,3 +58,10 @@ Narrow transistor0-> Hign delay --> Less area and Power
 
 So need to guide the sysnthsizer to select the flavour of cells
 To guide synthesizer, we use Constraints
+
+Synthesizer:
+1. Do Syntax check
+2. MAp design (Module to top level design)
+RTL converted in the form of Standard cells and givenm in the form of netlist
+LAB3: Intro to YOSYS
+Invoke Yosys 
