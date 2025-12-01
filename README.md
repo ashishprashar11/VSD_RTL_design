@@ -1,4 +1,4 @@
-Introduction: 
+**Introduction:** 
 Simulator : Tool used to check a design. RTL is implentation of spec and adherence to spec is checked using the tool Iwave (SIMULATOR)
 Testbench: To ensure design adhere to specified specification, need to apply stimulus to design to check functionality For ever change in input, output is evaluated. If no change inm input, no evaluation happens
 eg: AND gate, 2 inputs one output. for boh 2 inputs need to applly input and check the output. We need both stimulus generator and observer.
@@ -9,11 +9,10 @@ Load design in i verilog
 Use command iverilog <File_name.v> <TB_for_File_name.v>
 
 Use gtkwave to see the waveform 
-![Image](https://github.com/ashishprashar11/VSD_RTL_design/raw/main/image.png)
 
 ![Image](https://github.com/ashishprashar11/VSD_RTL_design/blob/435af94967bab1cf61842bbb96185ac3306ceb5e/untitled2.png)
 
-YOSIS and LOGIC SYNTHESIS
+**YOSIS and LOGIC SYNTHESIS**
 Synthesizer is used o convert the RTL to netlist --> yosys is used here
 Design>>.lib-->YOSYS-> Netlist (rep of standard cells)
 Commands:
@@ -26,7 +25,7 @@ Netlist + Testbench --> iverilog --> VCD file -> GTKWAVE and waveform output, st
 Netlist is the true form of design 
 Testbench will be same as a RTL testbench. We dont need new testbench
 
-LOGIC SYNTHESIS:
+**LOGIC SYNTHESIS:**
 RTL design is the behavioral rep of required specification. 
 RTL to gate level transition is called synthesis
 Design is converted to gates and gates are connected. THis is given as a file called netlist
@@ -57,11 +56,11 @@ Narrow transistor0-> Hign delay --> Less area and Power
 So need to guide the sysnthsizer to select the flavour of cells
 To guide synthesizer, we use Constraints
 
-Synthesizer:
+**Synthesizer:**
 1. Do Syntax check
 2. MAp design (Module to top level design)
 RTL converted in the form of Standard cells and givenm in the form of netlist
-LAB3: Intro to YOSYS
+**LAB3: Intro to YOSYS**
 Invoke Yosys 
 ![image](yosys.jpg)
 Read the library now 
