@@ -63,5 +63,29 @@ RTL converted in the form of Standard cells and givenm in the form of netlist
 **LAB3: Intro to YOSYS**
 Invoke Yosys 
 ![image](yosys.jpg)
+
 Read the library now 
+
 ![image](https://github.com/ashishprashar11/VSD_RTL_design/blob/ed377a0d980e6aaef70453a8470b577aa4b61aec/read.png)
+
+Library has special name. 
+Now we will read design 
+![image](read_verilog.png)
+
+If more hen 1 file, we will read all files.
+Now use synth -top <module to be synthesise>
+we will use good_mux module here
+![image](goodmux.png)
+
+Now will see its code 
+![image](goodmuxcode.png)
+Its pure combi circuit
+Now will generate netlist
+use abc -liberty <path>
+![image](abccommand)
+It will convert RTL to gate level netlist
+In message it will print the info of input , outputs and cells used i.e mux here
+![image](signals)
+
+Use *show* to see reqized logic 
+![image](show.png)
