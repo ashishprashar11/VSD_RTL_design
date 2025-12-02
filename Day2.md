@@ -36,8 +36,19 @@ can use no attr switch, hierarchies will be preserved
 
 **Stacked Nmos is better thhan Stacked PMOPS
 
-Now wil see *FLATTEN*
+Now will see *FLATTEN*
 ![image](flat.png)
-
+Flatten and show, you wil not see U1 and U2 unlike before
+![image](flatten.png)
+**Submodule level Synthesis**
+![image](submo.png)
+it infered only gate.
+now will link the design using abc - liberty
+![image](submo1.png)
+and then show 
+So only submodule 1. we did controlled the module which we was synthesising becoz say if we have a same module instantiated multiple times, so instead synthesisng the same module say 4 times, we synthesise he modules once and replicate the netlist maany times in top level
+So Modulelevel systhesis is prefered when have multiple instances of same module
+Also second reasom is if say design in massive and if design is given to the tool, it will not werk properly so will prefer giving portion by portion to get good optimized netlist, stiched at the top level.
+synth -top <module name >is used in yosys to control which module to sysnthesise
 
 
