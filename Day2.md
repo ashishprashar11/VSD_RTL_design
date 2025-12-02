@@ -18,3 +18,22 @@ withoutr PP we will open , PP->> Power port
 !A --> A is off
 D1--> D is on
 Power associated with this is mentioned 
+
+**Hierarchical vs Flat synthesis**
+Open multiple_modules.v file located in verilog files directore
+![image](mmodule.png)
+Now, first launch yosys and read the lib file 
+![image](liberty.png)
+read verilog file multiple module.v
+![image](readmodules.png)
+synthesise, you can see the deails as below
+After this use abc -liberty and SHow, it will show hierarchial design
+![image](showy.png)
+Now will see how netlist looks like 
+can use no attr switch, hierarchies will be preserved
+![image](attrsw.png)
+Now wil see *FLATTEN*
+
+
+
+
