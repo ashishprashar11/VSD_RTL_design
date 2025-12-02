@@ -52,3 +52,41 @@ Also second reasom is if say design in massive and if design is given to the too
 synth -top <module name >is used in yosys to control which module to sysnthesise
 
 
+**FLOPS AND FLOP CODING STYLE**
+All files reqired are in verilog files directory
+Flop: Combi ckts have propogation delay so glitches are exopected, 
+![image](glitch.png)
+So we need element to store a value called flop. Flops are storage elements
+If put flop between Comb clks, even though input is unstable, output will be stable and glitch will not be propogating throughout and output of combi ckt will be stable
+There is a initial stage of flop. To initialize we have reset and set which can be asyn or sync
+
+*Flop with asynch Reset*
+Thsi is a posedge flop, whenever the clock and rest changes, if reset happens, If is have high priority then else. If any changes in CLK or reset, always block is executed
+Under async reset, q will go low upon this asyn_rest. Else, only at posedge, q is getting d. If negedge, always block will not be executed. Its async rest as it does  not wait for any clock 
+![image](asyncreset.png)
+Synchronous, will turn to D pin of the flop
+![image](asynset.png)
+**flop with both sync and asyn set reset**
+![image](syasy.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8
