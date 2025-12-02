@@ -32,8 +32,12 @@ After this use abc -liberty and SHow, it will show hierarchial design
 Now will see how netlist looks like 
 can use no attr switch, hierarchies will be preserved
 ![image](attrsw.png)
-Now wil see *FLATTEN*
 
+
+**Stacked Nmos is better thhan Stacked PMOPS
+
+Now wil see *FLATTEN*
+![image](flat.png)
 
 
 
