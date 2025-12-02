@@ -55,7 +55,7 @@ synth -top <module name >is used in yosys to control which module to sysnthesise
 **FLOPS AND FLOP CODING STYLE**
 All files reqired are in verilog files directory
 Flop: Combi ckts have propogation delay so glitches are exopected, 
-![image](glitch.png)
+![image](flop.png)
 So we need element to store a value called flop. Flops are storage elements
 If put flop between Comb clks, even though input is unstable, output will be stable and glitch will not be propogating throughout and output of combi ckt will be stable
 There is a initial stage of flop. To initialize we have reset and set which can be asyn or sync
