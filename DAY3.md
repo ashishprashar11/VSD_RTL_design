@@ -85,6 +85,23 @@ this will infer 2 flops
 <img width="1920" height="1118" alt="image" src="https://github.com/user-attachments/assets/815e48a6-ca0a-4458-9084-777cffe3f3ce" />
 std cells are infered here. First is reset flop, second is set
 
+**Sequential Optimization of unused outputs**
+
+--> Code is there as counter_opt.v
+<img width="555" height="284" alt="image" src="https://github.com/user-attachments/assets/c8702ddb-31cf-45f2-a7b4-dd3a536b1907" />
+I.e. 3 bit up counter
+Final output q wil sense the oth bit other are unused 
+<img width="1250" height="569" alt="image" src="https://github.com/user-attachments/assets/84aa88bb-1304-406f-bd51-3d7bb372e061" />
+lets synthesise this
+Infer only 1 flop unlike expected 3 for 3 bit counter'
+<img width="1920" height="1334" alt="image" src="https://github.com/user-attachments/assets/d353f484-0a87-4d52-9bfa-717fcd74e803" />
+lets modify this i.e. instead of q=count[0], will but q= (count[2:0] == 3'b100) and synthesise
+<img width="592" height="353" alt="image" src="https://github.com/user-attachments/assets/07c4ebf8-b405-4bbf-ba14-9bdc3a8f8552" />.
+<img width="850" height="411" alt="image" src="https://github.com/user-attachments/assets/a49866a5-1eb6-4041-bab7-52bd71cdad64" />
+3 flops will be infered here as expected
+<img width="412" height="385" alt="image" src="https://github.com/user-attachments/assets/480530c0-1032-42d2-8a9a-3c771902f1db" />
+<img width="1920" height="598" alt="image" src="https://github.com/user-attachments/assets/e1e68851-f016-4cc4-b03b-2246b224e9a8" />
+
 
 
 
