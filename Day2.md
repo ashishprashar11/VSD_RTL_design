@@ -138,6 +138,13 @@ lets see mult8
 here we have multiplication with 9
 <img width="509" height="359" alt="image" src="https://github.com/user-attachments/assets/e4eaaf24-4bb5-41ac-9803-c201a9e1bbd4" />
 <img width="618" height="375" alt="image" src="https://github.com/user-attachments/assets/83c2c221-e9a7-4f16-a9c0-c172c3230338" />
+<img width="884" height="221" alt="image" src="https://github.com/user-attachments/assets/d530f28b-34fc-4390-8eed-092a4c767dab" />
+show
+<img width="1920" height="676" alt="image" src="https://github.com/user-attachments/assets/fc4bc79d-46b0-456e-9325-740402674ba0" />
+to see netlist 
+<img width="544" height="318" alt="image" src="https://github.com/user-attachments/assets/f1391e44-eb5f-44f0-a522-dcaf391c5349" />
+<img width="431" height="346" alt="image" src="https://github.com/user-attachments/assets/3cca050f-56b6-4c45-948c-fd35a1986c6a" />
+
 
 
 
