@@ -75,6 +75,15 @@ Now will see another one
 No flop infered in second case 
 Q is always 1 so no flop 
 <img width="1586" height="874" alt="image" src="https://github.com/user-attachments/assets/f0a680c2-55f6-4c5e-8a23-91094a72e48e" />
+Now const 3
+<img width="696" height="489" alt="image" src="https://github.com/user-attachments/assets/2348cce9-42f8-402a-8b33-5eadc37a5bef" />
+<img width="1083" height="194" alt="image" src="https://github.com/user-attachments/assets/81892db3-9695-4b06-9843-9a893ba7b140" />
+<img width="1626" height="318" alt="image" src="https://github.com/user-attachments/assets/31acd0e1-18b3-4d42-b139-9d21cf57dd94" />
+<img width="784" height="385" alt="image" src="https://github.com/user-attachments/assets/4743b417-3521-4de0-9c37-30873f71da19" />
+lets synthesise
+this will infer 2 flops
+<img width="1920" height="1118" alt="image" src="https://github.com/user-attachments/assets/815e48a6-ca0a-4458-9084-777cffe3f3ce" />
+std cells are infered here. First is reset flop, second is set
 
 
 
