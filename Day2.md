@@ -124,7 +124,21 @@ No need to call abc as no cell to infer
 <img width="843" height="334" alt="image" src="https://github.com/user-attachments/assets/4508dfec-8a74-4599-8896-81180b2460dc" />
 Show
 <img width="1261" height="925" alt="image" src="https://github.com/user-attachments/assets/6ec7bdb1-1399-4180-8c63-1bb7a37b3583" />
-i.e. a appended with 1'b0. I.e we expected 
+i.e. a appended with 1'b0. I.e we expected. Now lets see its netlist,
+<img width="466" height="306" alt="image" src="https://github.com/user-attachments/assets/098dd2d5-20a6-430f-a075-054f40fc9b66" />
+<img width="984" height="327" alt="image" src="https://github.com/user-attachments/assets/1eec6369-aa47-4027-a9f4-d4485abe36d6" />
+Now lets see 1 more secial case
+a--> 3Bit No.
+y--> 6Bit No.
+a*9=y, a*[8+1] = a*8 + a*1 
+<img width="857" height="491" alt="image" src="https://github.com/user-attachments/assets/05d91fa3-7a44-4405-b4db-50ea311db037" />
+<img width="755" height="473" alt="image" src="https://github.com/user-attachments/assets/16df779a-6f85-49be-9340-69d61a196a6c" />
+
+lets see mult8
+here we have multiplication with 9
+<img width="509" height="359" alt="image" src="https://github.com/user-attachments/assets/e4eaaf24-4bb5-41ac-9803-c201a9e1bbd4" />
+<img width="618" height="375" alt="image" src="https://github.com/user-attachments/assets/83c2c221-e9a7-4f16-a9c0-c172c3230338" />
+
 
 
 
