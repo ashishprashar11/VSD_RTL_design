@@ -46,6 +46,8 @@ Command to do optimization is opt_clean -purge
 All optimizations are dome now will link it to abd -liberty and show. We will get the and gate as expected
 <img width="1904" height="1170" alt="image" src="https://github.com/user-attachments/assets/9ce96de2-7ec5-40a8-89ee-480d2991f06a" />
 
+opt_check2 will be aslo have or gate
+<img width="1904" height="1170" alt="image" src="https://github.com/user-attachments/assets/c845a69b-4180-4a07-b040-c8e012a6754c" />
 
 
 
