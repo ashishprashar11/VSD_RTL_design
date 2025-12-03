@@ -27,6 +27,20 @@ Now have 2 copis of A and also no issue ad large +ve slack at A*
 *Retiming: If combo ligoc is say 5ns and of 2 ns, Clk to  delay and stup time =0,and ave limitation of 200 and 500Mhz fo clocking. So we wil shift the logic such that both elays are say 4ns and 3 ns leading to logic to work at 250 and 333Mhz*
 <img width="1286" height="664" alt="image" src="https://github.com/user-attachments/assets/d1ebb2d1-2724-4d63-aa4c-42fabc610c37" />
 
+***COMBINATIONAL LOGIC OPTIMIZATION**
+We will use opt files
+<img width="1730" height="44" alt="image" src="https://github.com/user-attachments/assets/16009055-eda2-43d2-bc81-cb08192a9d31" />
+opt_check.v looks like below
+<img width="507" height="175" alt="image" src="https://github.com/user-attachments/assets/c7eba3ce-dd24-4f58-927e-7fd824ebff78" />
+i.e. assigning y based aon a
+i.e. 2x1 mus
+Expected to be optimized as 2x1 mus
+Now opt_check2
+<img width="524" height="222" alt="image" src="https://github.com/user-attachments/assets/36067a8f-2caf-47a2-a298-69e5e8e0a4c1" />
+<img width="951" height="436" alt="image" src="https://github.com/user-attachments/assets/db00f15c-e5ce-40d0-bcf7-5f35bb4dcd5a" />
+Now we will invoke Yosys
+
+
 
 
 
