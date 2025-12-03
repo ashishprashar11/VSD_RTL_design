@@ -53,8 +53,23 @@ Now will see opt_Check3, will get 3 input and gate
 <img width="566" height="88" alt="image" src="https://github.com/user-attachments/assets/674e9bc8-f60b-4c2b-b8ff-142bd643bd8b" />
 <img width="1692" height="824" alt="image" src="https://github.com/user-attachments/assets/adca9602-e924-429c-acbd-be21becb15af" />
 
-
-
+***SEQUENTIAL LOGIC OPTIMIZATION**
+We will use file named with dff_const
+lets see for dff_const1 and dff_const2
+<img width="589" height="769" alt="image" src="https://github.com/user-attachments/assets/40e51b66-3ea0-4d4a-9045-b243e671b12a" />
+dff_const1: if reset q=0 else q=1 , Dis always 1'b1
+Rsest cn be deasserted anywhere but q will change only at clock edge
+dff_const2: if reset, i.e set here , d is tied to 1, if reset removed q=1 and is tied to 1 
+<img width="852" height="513" alt="image" src="https://github.com/user-attachments/assets/355ab722-25c6-42ca-bafd-d110c46e0196" />
+lets simulate first
+Q wil wait for edge of clock in first
+<img width="1232" height="292" alt="image" src="https://github.com/user-attachments/assets/b86bd933-7a36-4141-b255-1721c70b3337" />
+but in second case it will be 1
+<img width="1920" height="182" alt="image" src="https://github.com/user-attachments/assets/37bb228c-388d-4ae5-9c55-2a255bfe6883" />
+Now will synthesise
+<img width="1873" height="943" alt="image" src="https://github.com/user-attachments/assets/5e882dfe-7d4d-4e52-97ac-c51a6c349418" />
+So, dff we got i.e. has everthinmg as expected. STD cell lib expecting the reset to be active low, but we coded as active high so tool infering invertor here
+IF !reset it would not have infered the invertor
 
 
 
