@@ -39,6 +39,14 @@ Now opt_check2
 <img width="524" height="222" alt="image" src="https://github.com/user-attachments/assets/36067a8f-2caf-47a2-a298-69e5e8e0a4c1" />
 <img width="951" height="436" alt="image" src="https://github.com/user-attachments/assets/db00f15c-e5ce-40d0-bcf7-5f35bb4dcd5a" />
 Now we will invoke Yosys
+<img width="931" height="375" alt="image" src="https://github.com/user-attachments/assets/b3338271-f8d4-4a13-a9d9-f6b5ac8edb20" />
+<img width="764" height="198" alt="image" src="https://github.com/user-attachments/assets/fa30eaf9-7e3b-45eb-a4af-a79fbd224b33" />
+Command to do optimization is opt_clean -purge
+<img width="680" height="552" alt="image" src="https://github.com/user-attachments/assets/7a88e15e-be93-42e9-b7ff-0666af989b46" />
+All optimizations are dome now will link it to abd -liberty and show. We will get the and gate as expected
+<img width="1904" height="1170" alt="image" src="https://github.com/user-attachments/assets/9ce96de2-7ec5-40a8-89ee-480d2991f06a" />
+
+
 
 
 
