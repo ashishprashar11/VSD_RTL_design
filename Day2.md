@@ -89,7 +89,11 @@ Will now go to YOSYS. lets synthesise async reset flop
 5. So we wrote flop with active high reset but flop have active low rst so tool inserted invertor.
 
 Similarly can synthesise other codes
-Now will see flp wiuth sync reset
+Now will see flop with sync reset
 <img width="1904" height="1170" alt="image" src="https://github.com/user-attachments/assets/e7d6e62e-ca2c-427a-b7b9-795e2c7df79d" />
+Here, no set pin no reset pin, it only have sync reset
+We can see A_N i.e. inverted input.
+<img width="1234" height="517" alt="image" src="https://github.com/user-attachments/assets/7142d199-4896-472d-b38a-f610f14b3976" />
+
 
 
