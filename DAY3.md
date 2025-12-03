@@ -49,6 +49,9 @@ All optimizations are dome now will link it to abd -liberty and show. We will ge
 opt_check2 will be aslo have or gate
 <img width="1904" height="1170" alt="image" src="https://github.com/user-attachments/assets/c845a69b-4180-4a07-b040-c8e012a6754c" />
 
+Now will see opt_Check3, will get 3 input and gate
+<img width="566" height="88" alt="image" src="https://github.com/user-attachments/assets/674e9bc8-f60b-4c2b-b8ff-142bd643bd8b" />
+<img width="1692" height="824" alt="image" src="https://github.com/user-attachments/assets/adca9602-e924-429c-acbd-be21becb15af" />
 
 
 
