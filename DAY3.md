@@ -70,6 +70,11 @@ Now will synthesise
 <img width="1873" height="943" alt="image" src="https://github.com/user-attachments/assets/5e882dfe-7d4d-4e52-97ac-c51a6c349418" />
 So, dff we got i.e. has everthinmg as expected. STD cell lib expecting the reset to be active low, but we coded as active high so tool infering invertor here
 IF !reset it would not have infered the invertor
+Now will see another one
+<img width="965" height="411" alt="image" src="https://github.com/user-attachments/assets/7f0f9fa2-1ddc-4daa-88bc-c894cbc4cb98" />
+No flop infered in second case 
+Q is always 1 so no flop 
+<img width="1586" height="874" alt="image" src="https://github.com/user-attachments/assets/f0a680c2-55f6-4c5e-8a23-91094a72e48e" />
 
 
 
