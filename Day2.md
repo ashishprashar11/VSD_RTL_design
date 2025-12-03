@@ -86,27 +86,10 @@ Will now go to YOSYS. lets synthesise async reset flop
 3. Set synth -top
 4. as using flop, need to use dfflibmap -liberty as in flow, seprate flop library is there in std cell library, so need to mention this for tool to aware of where to pick this from here no such thing, we have same library so will point to same library
 ![image](sync_asyncrst.png)
-5. So we wrote flop with active high reset but flop have active low rst so tool insetrted invertor.
+5. So we wrote flop with active high reset but flop have active low rst so tool inserted invertor.
+
 Similarly can synthesise other codes
-
-   
-
-
+Now will see flp wiuth sync reset
+<img width="1904" height="1170" alt="image" src="https://github.com/user-attachments/assets/e7d6e62e-ca2c-427a-b7b9-795e2c7df79d" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8
