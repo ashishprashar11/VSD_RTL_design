@@ -101,6 +101,9 @@ lets modify this i.e. instead of q=count[0], will but q= (count[2:0] == 3'b100) 
 3 flops will be infered here as expected
 <img width="412" height="385" alt="image" src="https://github.com/user-attachments/assets/480530c0-1032-42d2-8a9a-3c771902f1db" />
 <img width="1920" height="598" alt="image" src="https://github.com/user-attachments/assets/e1e68851-f016-4cc4-b03b-2246b224e9a8" />
+Priviously, the unused logic is optimized which is poresent in this case
+<img width="1367" height="607" alt="image" src="https://github.com/user-attachments/assets/7388d23d-152e-407c-b88f-fae6177464ef" />
+
 
 
 
