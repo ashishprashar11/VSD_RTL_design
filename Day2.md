@@ -94,6 +94,41 @@ Now will see flop with sync reset
 Here, no set pin no reset pin, it only have sync reset
 We can see A_N i.e. inverted input.
 <img width="1234" height="517" alt="image" src="https://github.com/user-attachments/assets/7142d199-4896-472d-b38a-f610f14b3976" />
+**OPTIMIZATION**
+Lest look at rtl code
+All required files are in verilog file folder
+Will see mult2.v and mult8.v files
+ <img width="666" height="851" alt="image" src="https://github.com/user-attachments/assets/86fce2f8-7cab-4114-98f6-b8b53f9b07f2" />
+So accepting 3 bit input, 4 bit output y and y=2*a
+ a    y
+000 0000
+001 0010
+010 0100
+011 0110
+100 1000
+101 1010
+110 1100
+111 1110
+only last bit is getting appended
+so a[0], no HW required to do so
+if say x4 is there then its append 2 0s ie 5x4 = 20, 0101 * 4 = 10100
+X8 appends 3 0s
+In code we have y=a*2
+lets see what it is synthesise to 
+<img width="756" height="174" alt="image" src="https://github.com/user-attachments/assets/8f42513d-c9ba-4c40-9c31-14ed5d04c3d8" />
+<img width="594" height="156" alt="image" src="https://github.com/user-attachments/assets/e3b95619-b8ce-4b3c-8cfe-b5f9f284e7c6" />
+<img width="389" height="275" alt="image" src="https://github.com/user-attachments/assets/0ccb644a-e01b-41dc-a199-7567ab32ec72" />
+No cells infered,
+<img width="555" height="339" alt="image" src="https://github.com/user-attachments/assets/e494aab6-d873-4c4d-85d5-efe0a9d89636" />
+No need to call abc as no cell to infer 
+<img width="843" height="334" alt="image" src="https://github.com/user-attachments/assets/4508dfec-8a74-4599-8896-81180b2460dc" />
+Show
+<img width="1261" height="925" alt="image" src="https://github.com/user-attachments/assets/6ec7bdb1-1399-4180-8c63-1bb7a37b3583" />
+i.e. a appended with 1'b0. I.e we expected 
+
+
+
+
 
 
 
