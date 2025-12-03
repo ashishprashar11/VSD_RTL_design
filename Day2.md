@@ -69,7 +69,27 @@ Synchronous, will turn to D pin of the flop
 **flop with both sync and asyn set reset**
 ![image](syasy.png)
 
+**Lets now simulate the flops**
+![image](asyncrst.png)
+It shows that when reset commes, immediately the q comes down
+Now will see for async set
+Set is 1, q is 1 irespective of d unless set is 1. Its async set behaviours
+![image](asyncset.png)
+Now will see sync reset
+Reset is  priority here
+![image](syncrst.png)
 
+**Now lets synthesise these ckts and see what happens**
+Will now go to YOSYS. lets synthesise async reset flop
+1. Read liberty files
+2. Read design by read_verilog
+3. Set synth -top
+4. as using flop, need to use dfflibmap -liberty as in flow, seprate flop library is there in std cell library, so need to mention this for tool to aware of where to pick this from here no such thing, we have same library so will point to same library
+![image](syn_asyncrst.png)
+5. So we wrote flop with active high reset but flop have active low rst so tool insetrted invertor.
+Similarly can synthesise other codes
+
+   
 
 
 
