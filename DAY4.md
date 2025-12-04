@@ -87,19 +87,11 @@ Due to nature of blocking stmt, D=x&C get old value of x as new value of x is no
 First will do RTL simulation 
 <img width="1910" height="948" alt="image" src="https://github.com/user-attachments/assets/ced4dd84-069d-43e0-995d-208e1426b342" />
 Red--> (A0 or b0 )anded with c1 should be =0 but not zero. So clearly its looking the past value(Yellow)
-<img width="1910" height="948" alt="image" src="https://github.com/user-attachments/assets/802674dc-72fb-4fec-9f98-fd0a6f6f9c0f" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Now lets synthesise this
+<img width="2752" height="852" alt="image" src="https://github.com/user-attachments/assets/f7fd6d6d-f168-40cf-a654-78401bcd315a" />
+Nelist clearly shos that no flop ius there and only one gate
+Now lets do GLS
+when a0, b0 o/p is low irrespective of prvc snapshot where its looking for past value
+<img width="1894" height="884" alt="image" src="https://github.com/user-attachments/assets/a2731d36-7f41-4f25-9d18-0f5f29b1ac30" />
+Ie example of Sim Synt mismatch. Thats why asked to used blocking stmt with utmost clearity
