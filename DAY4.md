@@ -49,7 +49,7 @@ But q0 wil be executed only when second is executed and taken value is old value
 I.e latest value of q0 is used here in simulation and both codes will yield same circuit in synthesis
 <img width="1313" height="661" alt="image" src="https://github.com/user-attachments/assets/7e7ece52-70bb-49cf-948b-8766f71864eb" />
 
-To makle sure no mismatch in sim and synth, we use GLS
+To makle sure no mismatch in sim and synth, and match the expectation of design we use GLS
 
 
 
