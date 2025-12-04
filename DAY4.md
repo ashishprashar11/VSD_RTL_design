@@ -58,6 +58,29 @@ Ternary op: <Condn>?<true>:<false>
 will do simulation followed by synthesis. You can see mux is infered
 <img width="1836" height="1572" alt="image" src="https://github.com/user-attachments/assets/1efa7c2f-3d4c-4894-9e6a-d2875b11305a" />
 
+Now we will do GLS for which first we will invoke iverilog with verilog file models
+these are the 2 files we need to read first with netlist and TB
+<img width="1829" height="47" alt="image" src="https://github.com/user-attachments/assets/547443c4-3e72-415e-932c-09db93eec471" />
+so this will mimic the Mux behavior 
+<img width="1836" height="930" alt="image" src="https://github.com/user-attachments/assets/33d2acf5-b6cd-4b4a-b2f3-9b354f820cba" />
+lets go further now
+Now will see more advanced. Will see bad_mux file
+<img width="645" height="307" alt="image" src="https://github.com/user-attachments/assets/ca6d1138-8532-4ec1-b306-88d53d69e039" />
+Will see RTL sim first
+Here the sensitivity lest is only have sel. In sim will act as flop kind
+<img width="1901" height="930" alt="image" src="https://github.com/user-attachments/assets/389572e3-26c9-4e5b-a966-308fb6cdd2cd" />
+Whenever select is changing, then only y is changing. Looks like aprrox Flop behavior
+Now will synthesise this, here also mux will be infered. Get bad mux netlist shown in green.
+<img width="1372" height="930" alt="image" src="https://github.com/user-attachments/assets/57b43bc7-ea8a-45c3-b31d-85e1d9ae9317" />
+We will use this to simulate 
+<img width="1682" height="866" alt="image" src="https://github.com/user-attachments/assets/9d23d780-f1fe-4247-9e18-4ceaa3224437" />
+SO previously no activity as there when sel was 0, which is not the case here.
+THIS IS SYNT SIM MISMATCH DUE TO SENSITIVITY LIST
+
+
+
+
+
 
 
 
