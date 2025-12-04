@@ -51,6 +51,12 @@ I.e latest value of q0 is used here in simulation and both codes will yield same
 
 To makle sure no mismatch in sim and synth, and match the expectation of design we use GLS
 
+Now we will RUN GLS. We need Netlist verilog models and TB to submit  iverilog
+We will be using below code. 
+Ternary op: <Condn>?<true>:<false>
+<img width="1132" height="920" alt="image" src="https://github.com/user-attachments/assets/a948e744-cee0-43bc-bc95-bcd37972e1d3" />
+will do simulation followed by synthesis. You can see mux is infered
+<img width="1836" height="1572" alt="image" src="https://github.com/user-attachments/assets/1efa7c2f-3d4c-4894-9e6a-d2875b11305a" />
 
 
 
