@@ -74,8 +74,21 @@ Now will synthesise this, here also mux will be infered. Get bad mux netlist sho
 <img width="1372" height="930" alt="image" src="https://github.com/user-attachments/assets/57b43bc7-ea8a-45c3-b31d-85e1d9ae9317" />
 We will use this to simulate 
 <img width="1682" height="866" alt="image" src="https://github.com/user-attachments/assets/9d23d780-f1fe-4247-9e18-4ceaa3224437" />
-SO previously no activity as there when sel was 0, which is not the case here.
+SO previously no activity was there when sel was 0, which is not the case here.
 THIS IS SYNT SIM MISMATCH DUE TO SENSITIVITY LIST
+
+NOW WILL SEE SYNT SIM MISMATCH DUE TO Blocking ASSIGNMENT
+Will use file bocking_caveat.v
+<img width="667" height="231" alt="image" src="https://github.com/user-attachments/assets/bea34449-cc18-4b94-b717-5a70937d4dde" />
+Aim: To creatre logic (a&B)|c
+X is the intermediate point
+D is x & C
+Due to nature of blocking stmt, D=x&C get old value of x as new value of x is not evaluated and it will look like x is the floped value in the simulation 
+First will do RTL simulation 
+<img width="1910" height="948" alt="image" src="https://github.com/user-attachments/assets/ced4dd84-069d-43e0-995d-208e1426b342" />
+Red--> (A0 or b0 )anded with c1 should be =0 but not zero. So clearly its looking the past value(Yellow)
+<img width="1910" height="948" alt="image" src="https://github.com/user-attachments/assets/802674dc-72fb-4fec-9f98-fd0a6f6f9c0f" />
+
 
 
 
