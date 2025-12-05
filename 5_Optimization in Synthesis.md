@@ -184,6 +184,47 @@ Lets see same for for generate case, both wil be same
 <img width="1908" height="858" alt="image" src="https://github.com/user-attachments/assets/64a150f6-6458-4f93-b76d-3e2c3890e7b2" />
 When synthesised will lead to below
 <img width="1458" height="884" alt="image" src="https://github.com/user-attachments/assets/88361978-70fb-4536-97a6-5466c1dcfe0c" />
+**Now lets see example of for generate**
+Lets see Ripple carry adder as discussed before in this file
+<img width="656" height="336" alt="image" src="https://github.com/user-attachments/assets/ac52e891-6fc5-4bb5-b6e7-d2e01e9822ed" />
+
+Can do in 2 ways
+1 --> instantiate FA four times and conect.
+It ooks simpl but its only 4. What if 32 bit no. so second way
+2 --> For generate- > It will replicate the hardware
+One full edder replicated based on for generate for replication 
+File used are below
+<img width="827" height="40" alt="image" src="https://github.com/user-attachments/assets/6c1041e8-dc83-4f8f-a7f7-b0b8c971c7da" />
+<img width="1066" height="709" alt="image" src="https://github.com/user-attachments/assets/cfb5d529-8008-41a1-bd8e-fb39ff6e592d" />
+Full adder: Summiong the 3 one bit binary numbers.
+Ripple Adder:RULE FOR ADDITION
+Add N bit and N bit no. the result will be N+1 Bits
+Add N bit and M bit no. the result will be max(N,M) +1 Bits
+So for 8 bit 2 no. it will be 9 bits
+First adders carry should be 0 so wrote differently for the fa u_fa_0
+VAriable used is genvar. It can not be declared as a integer. 
+<img width="946" height="735" alt="image" src="https://github.com/user-attachments/assets/cce19914-3878-4b51-a6ff-ed42e5863456" />
+Now lets simulate this
+<img width="947" height="250" alt="image" src="https://github.com/user-attachments/assets/e85abff3-d196-486d-9eb4-ee9a16b4ba88" />
+Error as FA is instantiated in rca so need to call this as well, need to tell tool where is the defination of this FA
+<img width="419" height="46" alt="image" src="https://github.com/user-attachments/assets/3c01dee6-be18-4a76-8ee0-d56d7c3282f0" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
