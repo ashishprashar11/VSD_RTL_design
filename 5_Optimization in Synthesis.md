@@ -82,9 +82,15 @@ When i0 low, o/p looks toward i2. So in window when i0 , i2 both low, o/p is con
 so we got combo logic fxn of i0, i1, i3 and i2 i.e. we expected and enables of latch io ored with i2. If both i0, i2 0, it will latch 
 
 **Now lets see incomplete CASE statements**
-
-
-
+<img width="1076" height="948" alt="image" src="https://github.com/user-attachments/assets/ca168ee9-8dd2-41d0-80cf-98538192a428" />
+for sel 00, 01 its defined but nothing defined for 10 and 11 also default is not coded so it will be going to latch.
+Whenever select of 1 is 1 we have latching action as shown in truth table when 0
+<img width="925" height="468" alt="image" src="https://github.com/user-attachments/assets/5b746437-46e7-4682-b541-d0f2a1951dc5" />
+Now lets simulater and synthesise
+Its latching for 10 and 11
+<img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/4870ae0d-21e1-4fc2-927b-c349116cec86" />
+<img width="2594" height="840" alt="image" src="https://github.com/user-attachments/assets/8ad46e9c-e424-4257-818e-1fd4baa8c019" />
+So we get latch with enable condition of same as expected. It negative latch so sel is buffered only 
 
 
 
