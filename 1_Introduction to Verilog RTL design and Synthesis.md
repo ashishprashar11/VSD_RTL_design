@@ -9,8 +9,7 @@ Load design in i verilog
 Use command iverilog <File_name.v> <TB_for_File_name.v>
 
 Use gtkwave to see the waveform 
-
-![Image](https://github.com/ashishprashar11/VSD_RTL_design/blob/435af94967bab1cf61842bbb96185ac3306ceb5e/untitled2.png)
+<img width="1667" height="699" alt="image" src="https://github.com/user-attachments/assets/56ba8721-09f7-4f90-a8a8-7080e347233f" />
 
 **YOSIS and LOGIC SYNTHESIS**
 Synthesizer is used o convert the RTL to netlist --> yosys is used here
