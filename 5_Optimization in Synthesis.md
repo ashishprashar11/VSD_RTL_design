@@ -68,6 +68,19 @@ I2 not used, i0 enable pin i1 is the d, q is to Y
 <img width="1302" height="930" alt="image" src="https://github.com/user-attachments/assets/16fcc441-974e-4aa8-9cd6-ce7c140f0e6f" />
 i.e. the infered latch comming out of incomplete IF statement
 
+**Now lets see incomplete_if2
+<img width="870" height="930" alt="image" src="https://github.com/user-attachments/assets/b7676f9c-bb38-4e73-bd95-d587d654eaa1" />
+Here what will happen if i0 and i2 both are false is not mentioned. So they will latch
+So we will get latch
+SO we will get such that i0 i1 ored are the enable of the latch as shown in pic. we wil aso have a combo ligic of these at input of latch 
+<img width="1217" height="555" alt="image" src="https://github.com/user-attachments/assets/d989a835-f773-4564-9b5f-89879ec23ee4" />
+Now we will simulate and synthesise
+<img width="1908" height="930" alt="image" src="https://github.com/user-attachments/assets/28597ab0-18a2-48ab-9749-8ea99e44ebcf" />
+When i0 high, o/p is following i1
+When i0 low, o/p looks toward i2. So in window when i0 , i2 both low, o/p is constanst. When I2 goes high, it starts following i3
+<img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/fea23e5f-8bbe-44ec-b848-f8a14a7c6cf3" />
+so we got combo logic fxn of i0, i1, i3 and i2 i.e. we expected and enables of latch io ored with i2. If both i0, i2 0, it will latch 
+
 
 
 
