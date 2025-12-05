@@ -83,11 +83,13 @@ Now will see its code
 Its pure combi circuit
 Now will generate netlist
 use abc -liberty <path>
-![image](abccommand)
+<img width="601" height="129" alt="abccommand" src="https://github.com/user-attachments/assets/05f0013f-09a9-4730-97d9-ae522a5154cd" />
+
 
 It will convert RTL to gate level netlist
 In message it will print the info of input , outputs and cells used i.e mux here
-![image](signals)
+<img width="601" height="430" alt="signals" src="https://github.com/user-attachments/assets/43312e47-b908-4fd4-a937-2cab8a5efadc" />
+
 
 Use *show* to see reqized logic 
 <img width="1486" height="887" alt="image" src="https://github.com/user-attachments/assets/7043daab-97d7-44d9-99c2-03a037af790c" />
