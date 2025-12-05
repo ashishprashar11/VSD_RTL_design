@@ -62,38 +62,49 @@ RTL converted in the form of Standard cells and givenm in the form of netlist
 **LAB3: Intro to YOSYS**
 Invoke Yosys 
 ![image](yosys.jpg)
+<img width="1100" height="743" alt="image" src="https://github.com/user-attachments/assets/d13b68e9-9a3f-4e0d-8d3d-36547d59981b" />
 
 Read the library now 
 
 ![image](https://github.com/ashishprashar11/VSD_RTL_design/blob/ed377a0d980e6aaef70453a8470b577aa4b61aec/read.png)
+<img width="761" height="467" alt="image" src="https://github.com/user-attachments/assets/49742272-5841-470c-aaf6-27c61985b799" />
 
 Library has special name. 
 Now we will read design 
 ![image](read_verilog.png)
+<img width="1059" height="521" alt="image" src="https://github.com/user-attachments/assets/9fbc6b8a-edd1-43a5-831b-161fa5c7eb55" />
 
 If more hen 1 file, we will read all files.
 Now use synth -top <module to be synthesise>
 we will use good_mux module here
 ![image](goodmux.png)
+<img width="801" height="759" alt="image" src="https://github.com/user-attachments/assets/a34069d3-39bd-42ee-a955-3916eae8f8b8" />
+
 
 Now will see its code 
 ![image](goodmuxcode.png)
+<img width="811" height="278" alt="image" src="https://github.com/user-attachments/assets/9c530ee8-3915-40d5-a200-e49c6797397f" />
+
 Its pure combi circuit
 Now will generate netlist
 use abc -liberty <path>
 ![image](abccommand)
+
 It will convert RTL to gate level netlist
 In message it will print the info of input , outputs and cells used i.e mux here
 ![image](signals)
 
 Use *show* to see reqized logic 
 ![image](show.png)
+<img width="1486" height="887" alt="image" src="https://github.com/user-attachments/assets/7043daab-97d7-44d9-99c2-03a037af790c" />
 
 
 Now will see how Netlist looks
 use __write_verilog <name>__ and to open use __!gvim <name>__
 ![image](writeverilog.png)
+<img width="1236" height="705" alt="image" src="https://github.com/user-attachments/assets/8c48a74a-d1a0-4a53-869a-647ca7df4b38" />
 
 It have lot of info now will use one swich to ge more shorted netlist
 use **write_verilog -noattr <name>**
 ![image](attr.png)
+<img width="1236" height="707" alt="image" src="https://github.com/user-attachments/assets/189b8069-afe3-478f-9942-fe8d191db1bc" />
