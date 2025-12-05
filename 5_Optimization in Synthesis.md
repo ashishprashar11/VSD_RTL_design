@@ -51,7 +51,31 @@ for default, told to follwe d
 So, assign all he outputs in all the segments of the case. 
 In case of if stmts, if "if " is executed, no else thing can be executed. But in "case" things are different. And it will give unpredictable outputs like as shown in pic with 2'b1? i.e. in bad case like if 2'b10, 2 matches will be there. If in "If", condition meets, it will comeout after match but not in "case", it will check every case even if it matches.
 So no overlapping case should be there
+
 <img width="898" height="511" alt="image" src="https://github.com/user-attachments/assets/5ef4be1d-b1c1-4e79-9b39-46b402e72568" />
 
 _____________
+Will start with in complee If
+<img width="1061" height="79" alt="image" src="https://github.com/user-attachments/assets/13ac4ea6-47c6-42b4-b59c-9ca5577276e0" />
+<img width="878" height="496" alt="image" src="https://github.com/user-attachments/assets/10005b49-14f2-4857-9c15-0e2e53dba4c0" />
+<img width="1366" height="842" alt="image" src="https://github.com/user-attachments/assets/56aa88fd-4359-45c4-a6a2-34e6b406bf64" />
+No we will simulate and synthesise this
+Whenever i0 (sel line) high, y is following i1. If low, its following prvc value. Momement i0 going low taking the I1 value.
+<img width="1900" height="897" alt="image" src="https://github.com/user-attachments/assets/9de5ed67-e852-47b1-9b3e-ff30db9f4586" />
+Now will synthesis
+Our goal is to  code a mux but tool infered latch
+I2 not used, i0 enable pin i1 is the d, q is to Y 
+<img width="1302" height="930" alt="image" src="https://github.com/user-attachments/assets/16fcc441-974e-4aa8-9cd6-ce7c140f0e6f" />
+i.e. the infered latch comming out of incomplete IF statement
+
+
+
+
+
+
+
+
+
+
+
 
