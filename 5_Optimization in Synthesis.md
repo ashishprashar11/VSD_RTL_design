@@ -90,7 +90,7 @@ Now lets simulater and synthesise
 Its latching for 10 and 11
 <img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/4870ae0d-21e1-4fc2-927b-c349116cec86" />
 <img width="2594" height="840" alt="image" src="https://github.com/user-attachments/assets/8ad46e9c-e424-4257-818e-1fd4baa8c019" />
-So we get latch with enable condition of same as expected. It negative latch so sel is buffered only 
+So we get latch with enable condition of same as expected. Its negative latch so sel is buffered only 
 
 
 
