@@ -207,7 +207,15 @@ VAriable used is genvar. It can not be declared as a integer.
 Now lets simulate this
 <img width="947" height="250" alt="image" src="https://github.com/user-attachments/assets/e85abff3-d196-486d-9eb4-ee9a16b4ba88" />
 Error as FA is instantiated in rca so need to call this as well, need to tell tool where is the defination of this FA
-<img width="419" height="46" alt="image" src="https://github.com/user-attachments/assets/3c01dee6-be18-4a76-8ee0-d56d7c3282f0" />
+<img width="1899" height="840" alt="image" src="https://github.com/user-attachments/assets/b2219798-4aa8-479d-8d4f-890570df08b4" />
+<img width="1894" height="351" alt="image" src="https://github.com/user-attachments/assets/b8ac924b-0110-4641-bd2f-ff2651aed85e" />
+Lets synthesise this now
+<img width="974" height="1544" alt="image" src="https://github.com/user-attachments/assets/a2c77692-fb19-4f42-b13d-207e90da6e9c" />
+<img width="983" height="841" alt="image" src="https://github.com/user-attachments/assets/28b301b1-edf4-4d2c-a3ab-374e53d96dc1" />
+<img width="993" height="838" alt="image" src="https://github.com/user-attachments/assets/dc783411-aab4-4bab-94cd-d75406576091" />
+
+
+
 
 
 
