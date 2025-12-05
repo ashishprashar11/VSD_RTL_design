@@ -1,6 +1,7 @@
 **If, Case statements**
 If --> Used to creat the priority logic
 Syntax 
+
 <img width="218" height="176" alt="image" src="https://github.com/user-attachments/assets/4f255f8d-372c-475c-a23a-ab5553a7c8e6" />
 <img width="264" height="322" alt="image" src="https://github.com/user-attachments/assets/667091ec-e65f-496b-8880-e1d7e716fbce" />
 __________________________
