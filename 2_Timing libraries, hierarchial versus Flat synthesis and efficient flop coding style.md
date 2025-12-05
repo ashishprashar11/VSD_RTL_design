@@ -1,7 +1,8 @@
 **.lib**
 .lib contains the slow fast and medium speed cells
 Open Sky130 library
-![image](libraryfile.png)
+<img width="1409" height="915" alt="image" src="https://github.com/user-attachments/assets/1d8a7f54-66a8-403c-b3f9-e518e7aebf3d" />
+
 130--> 130nm library
 tt--> typical
 025c--> temprature
@@ -9,10 +10,12 @@ PVT: Process Voltag Temprature; these are important for design to work
 Process variation are due to fabrication i.e. variations due to fab machines. Variations are also in voltage and temprature. These PVT defines how the Silicon works
 eg, a product used in different conditions so need it to work in all conditions.
 You can see operating conditions, voltage, process, time units, resistance unit used in the same file
-![image](operatingcnd.png)
+<img width="554" height="699" alt="image" src="https://github.com/user-attachments/assets/26963ae2-ce21-4efd-a092-a58ab718902e" />
+
 .lib is a bucket of all std cells as shown below, CELL marks the begining of cell defination
 eg cell is and 2 or gate a2lll0_1
-![image](and2or.png)
+<img width="1721" height="855" alt="image" src="https://github.com/user-attachments/assets/312d9fc3-8bcd-4b4d-95d2-bea010fdcdfb" />
+
 we can open its behavioral model
 withoutr PP we will open , PP->> Power port 
 !A --> A is off
@@ -21,30 +24,41 @@ Power associated with this is mentioned
 
 **Hierarchical vs Flat synthesis**
 Open multiple_modules.v file located in verilog files directore
-![image](mmodule.png)
+<img width="772" height="364" alt="image" src="https://github.com/user-attachments/assets/b6d4db09-5e98-46a5-83ed-c5a0544ec88c" />
+
 Now, first launch yosys and read the lib file 
-![image](liberty.png)
+<img width="972" height="478" alt="image" src="https://github.com/user-attachments/assets/313cb750-7990-42d8-8b77-c0f930eeacc8" />
+
+
 read verilog file multiple module.v
-![image](readmodules.png)
+<img width="688" height="183" alt="image" src="https://github.com/user-attachments/assets/5276d377-22e2-4799-98ff-b7910ccf52cb" />
+
+
 synthesise, you can see the deails as below
 After this use abc -liberty and SHow, it will show hierarchial design
-![image](showy.png)
+<img width="7064" height="2352" alt="image" src="https://github.com/user-attachments/assets/3bec41d5-e9e5-4b08-ba80-8f2e9d88954c" />
+
 Now will see how netlist looks like 
 can use no attr switch, hierarchies will be preserved
-![image](attrsw.png)
+<img width="2516" height="1140" alt="image" src="https://github.com/user-attachments/assets/e53a6d2c-5e3b-4e8b-89ab-08ffa7ea4fd6" />
+
 
 
 **Stacked Nmos is better thhan Stacked PMOPS
 
 Now will see *FLATTEN*
-![image](flat.png)
+<img width="2516" height="1140" alt="image" src="https://github.com/user-attachments/assets/0c86c64c-8fcb-48ce-943f-1756c1b0e483" />
+
 Flatten and show, you wil not see U1 and U2 unlike before
-![image](flatten.png)
+<img width="2516" height="1140" alt="image" src="https://github.com/user-attachments/assets/6c86a5c8-ad02-4e75-8359-0fbddb595e0d" />
+
 **Submodule level Synthesis**
-![image](submo.png)
+<img width="2516" height="1140" alt="image" src="https://github.com/user-attachments/assets/b300c56b-bec1-4907-9471-b30ee0bf6523" />
+
 it infered only gate.
 now will link the design using abc - liberty
-![image](submo1.png)
+<img width="2516" height="1140" alt="image" src="https://github.com/user-attachments/assets/34b7f135-9f42-4492-9da6-873b29f4ba2c" />
+
 and then show 
 So only submodule 1. we did controlled the module which we was synthesising becoz say if we have a same module instantiated multiple times, so instead synthesisng the same module say 4 times, we synthesise he modules once and replicate the netlist maany times in top level
 So Modulelevel systhesis is prefered when have multiple instances of same module
