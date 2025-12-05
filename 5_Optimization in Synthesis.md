@@ -1,4 +1,4 @@
-**If, Case statements**
+x xxxxxxxxxxxxxxxxx**If, Case statements**
 If --> Used to creat the priority logic
 Syntax 
 
@@ -121,3 +121,106 @@ Here its clean ie 00--> i0
 11 -->i3
 No confussion here unlike RTL simulation 
 SUCH CODING PRACTICES SHOULD BE AVOIDED
+
+**Will see ow to use looping construct to generate the hardware, simplified the hardware**
+**LOOPING CONSTRUCTS**
+In verilog, there is a **for** loop and a **generate** followed bu a for loopp
+FOR loop is used in always
+GENERATE and not be used in for loop. It should not and cannot be used inside always loop
+GENERATE is used to instantiating the hardware
+eg, if need to instantiatethe & gate 100 time, in such case nned to use generate with for loop, whereas plane for loop is used to evaluating the expressions. For loop is not for generating(Instantiating) the hardware.
+Eg, need & gate 100 times but can not be done by for loop. If want to evalute the expression multiople times, need to use the FOR Loop
+32:1 mux will become more comlex if follow the approach as below
+<img width="1334" height="603" alt="image" src="https://github.com/user-attachments/assets/36326d0a-452a-42ce-b731-78d4d75e1511" />
+Instead, can use below approach
+<img width="938" height="515" alt="image" src="https://github.com/user-attachments/assets/47a5b1af-1359-4a2d-8249-0012057e6675" />
+Same is the case with demultiplexer,
+Eg 1x8 demux
+<img width="897" height="520" alt="image" src="https://github.com/user-attachments/assets/e9540a77-ad2a-438d-927d-6b1675fe9928" />
+**FOR GENERATE**
+Lets say we need t instantiate 500 time say 500 instances of & gate.
+For generate is for replicating the hardware
+Its used outside always block 
+<img width="916" height="515" alt="image" src="https://github.com/user-attachments/assets/216317e1-7f81-4b95-a68c-376da0cc7601" />
+This will instantiate & gate 8 times. SO each will have a, b anf y pin. It is replication of hardware.
+eg ripple carry adder(RCA), where we need to add 2 binary numbers
+if carry is there need to card forward. Carry ripple till the last.
+It will have multiple full adders like shown below
+<img width="886" height="502" alt="image" src="https://github.com/user-attachments/assets/439bd988-42cf-43cf-9b9f-06561a10e195" />
+So here instantiating 3 times the full adder. If say we have 500 bit then it will be issue. In such cases need this approach
+Similarly can use the if generate approach also but same outside the Always block
+QUICK COMPARISON SUMMARY 
+<img width="880" height="302" alt="image" src="https://github.com/user-attachments/assets/3747f309-9bee-4e27-9822-955b403d079c" />
+_________________________________________________________________________
+No wwill see looping constructs in LAB
+First lets see MUX
+file used is mux_generate.v
+<img width="1013" height="420" alt="image" src="https://github.com/user-attachments/assets/c1cc4705-2a9d-4b12-9dc2-129871455907" />
+Modile has input i0,i1,i2,i3, 2 bit select line and output (1bit)
+Internally we are making bus i_int
+Declared integer K
+FOR loop is used here so is in always block.
+Select will take only 4 values. If K and select are matching, y will be assingned he value of i_int[0][
+I.e. 2x1 mux fxnality 
+Lets simulate and see
+<img width="1908" height="890" alt="image" src="https://github.com/user-attachments/assets/f1199eb3-dd7c-44c4-87bd-12dcfa2a7a5e" />
+If do same using case statements, complexity increase like below snapshot 
+<img width="905" height="481" alt="image" src="https://github.com/user-attachments/assets/12613947-28be-4ada-8293-93d32aa0cbfe" />
+But in this just need to change k
+<img width="1908" height="830" alt="image" src="https://github.com/user-attachments/assets/f9dce788-bfc7-4bbd-a484-d3470bd32436" />
+Nest example we will see is demux
+Here we will have y_int instead of i_int of mux 
+<img width="704" height="395" alt="image" src="https://github.com/user-attachments/assets/96b8f2be-8681-46bf-b353-de757996685a" />
+<img width="1318" height="459" alt="image" src="https://github.com/user-attachments/assets/5e664978-b22d-494e-ba28-2850b2024b92" />
+Its good for small but not for bigger one say 256
+see another approach where generate is used , 
+<img width="1414" height="307" alt="image" src="https://github.com/user-attachments/assets/0ec683d1-189b-4d02-9a42-2e710fc7aae8" />
+lets simulate and see first for case stmt
+<img width="1908" height="896" alt="image" src="https://github.com/user-attachments/assets/126f2197-70d5-48c0-a946-5169bcf31ed3" />
+Will see its synth also 
+<img width="1458" height="884" alt="image" src="https://github.com/user-attachments/assets/b5e4c4e0-2dfa-42cf-9db5-72d475ed8b25" />
+
+Lets see same for for generate case, both wil be same 
+<img width="1908" height="858" alt="image" src="https://github.com/user-attachments/assets/64a150f6-6458-4f93-b76d-3e2c3890e7b2" />
+When synthesised will lead to below
+<img width="1458" height="884" alt="image" src="https://github.com/user-attachments/assets/88361978-70fb-4536-97a6-5466c1dcfe0c" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
