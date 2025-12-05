@@ -54,7 +54,7 @@ synth -top <module name >is used in yosys to control which module to sysnthesise
 **FLOPS AND FLOP CODING STYLE**
 All files reqired are in verilog files directory
 Flop: Combi ckts have propogation delay so glitches are exopected, 
-![image](flop.png)
+<img width="642" height="554" alt="image" src="https://github.com/user-attachments/assets/0c953895-a3ad-4e57-b84b-6b48f21893fc" />
 So we need element to store a value called flop. Flops are storage elements
 If put flop between Comb clks, even though input is unstable, output will be stable and glitch will not be propogating throughout and output of combi ckt will be stable
 There is a initial stage of flop. To initialize we have reset and set which can be asyn or sync
@@ -62,21 +62,22 @@ There is a initial stage of flop. To initialize we have reset and set which can 
 *Flop with asynch Reset*
 Thsi is a posedge flop, whenever the clock and rest changes, if reset happens, If is have high priority then else. If any changes in CLK or reset, always block is executed
 Under async reset, q will go low upon this asyn_rest. Else, only at posedge, q is getting d. If negedge, always block will not be executed. Its async rest as it does  not wait for any clock 
-![image](asyncreset.png)
+<img width="1020" height="235" alt="image" src="https://github.com/user-attachments/assets/a2d79178-5d14-4067-835f-7362fad1e5a4" />
 Synchronous, will turn to D pin of the flop
-![image](asynset.png)
+<img width="1222" height="561" alt="image" src="https://github.com/user-attachments/assets/224af996-cc5c-4027-948f-9a72c69d63db" />
 **flop with both sync and asyn set reset**
-![image](syasy.png)
+<img width="1478" height="490" alt="image" src="https://github.com/user-attachments/assets/cfe8de68-3e8b-43b3-bafb-903caa84f3d6" />
 
 **Lets now simulate the flops**
-![image](asyncrst.png)
+<img width="1897" height="656" alt="image" src="https://github.com/user-attachments/assets/9e9900a6-2963-4db1-9339-62f42bd92ab4" />
 It shows that when reset commes, immediately the q comes down
 Now will see for async set
 Set is 1, q is 1 irespective of d unless set is 1. Its async set behaviours
-![image](asyncset.png)
+<img width="1651" height="756" alt="image" src="https://github.com/user-attachments/assets/7fb16131-dfad-458a-bc91-a958721b5562" />
 Now will see sync reset
 Reset is  priority here
-![image](syncrst.png)
+<img width="1899" height="756" alt="image" src="https://github.com/user-attachments/assets/32788b87-b696-4602-a92f-b73b469b8a93" />
+
 
 **Now lets synthesise these ckts and see what happens**
 Will now go to YOSYS. lets synthesise async reset flop
@@ -84,7 +85,8 @@ Will now go to YOSYS. lets synthesise async reset flop
 2. Read design by read_verilog
 3. Set synth -top
 4. as using flop, need to use dfflibmap -liberty as in flow, seprate flop library is there in std cell library, so need to mention this for tool to aware of where to pick this from here no such thing, we have same library so will point to same library
-![image](sync_asyncrst.png)
+<img width="2774" height="1444" alt="image" src="https://github.com/user-attachments/assets/e5a81896-1a07-458f-8073-7d7acea349b3" />
+
 5. So we wrote flop with active high reset but flop have active low rst so tool inserted invertor.
 
 Similarly can synthesise other codes
