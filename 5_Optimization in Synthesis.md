@@ -92,7 +92,19 @@ Its latching for 10 and 11
 <img width="2594" height="840" alt="image" src="https://github.com/user-attachments/assets/8ad46e9c-e424-4257-818e-1fd4baa8c019" />
 So we get latch with enable condition of same as expected. Its negative latch so sel is buffered only 
 
-
+**Now lets see a complete case**
+Here no latch expected
+<img width="1662" height="884" alt="image" src="https://github.com/user-attachments/assets/5e8d8ef0-b890-4cff-9e65-fac930e08f24" />
+<img width="1896" height="884" alt="image" src="https://github.com/user-attachments/assets/4089d5ec-aeb9-4c04-a599-07907b6df87a" />
+as expected results, now we will synthesis
+No latch will be infered here 
+<img width="1912" height="1054" alt="image" src="https://github.com/user-attachments/assets/70be8836-feda-4c02-96be-4406176e2b74" />
+**Now lets see a Partial case**
+<img width="1129" height="371" alt="image" src="https://github.com/user-attachments/assets/384c1764-e6b2-49c4-b1d1-15e9a50b59d2" />
+<img width="937" height="520" alt="image" src="https://github.com/user-attachments/assets/b2432533-f542-4650-8f87-82f297b553c5" />
+It follows redundancy theorem **a+a'b=a+b**
+<img width="2446" height="928" alt="image" src="https://github.com/user-attachments/assets/d04d8978-1c01-4832-9b8e-fac53d7f4577" />
+I.e. what we expected 
 
 
 
