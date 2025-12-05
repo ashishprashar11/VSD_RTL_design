@@ -212,64 +212,8 @@ Error as FA is instantiated in rca so need to call this as well, need to tell to
 Lets synthesise this now
 <img width="974" height="1544" alt="image" src="https://github.com/user-attachments/assets/a2c77692-fb19-4f42-b13d-207e90da6e9c" />
 <img width="983" height="841" alt="image" src="https://github.com/user-attachments/assets/28b301b1-edf4-4d2c-a3ab-374e53d96dc1" />
-<img width="993" height="838" alt="image" src="https://github.com/user-attachments/assets/dc783411-aab4-4bab-94cd-d75406576091" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+similarly can also view for FA 
+<img width="992" height="830" alt="image" src="https://github.com/user-attachments/assets/72b396e1-6ee0-4cde-842e-768d732a161f" />
+Now wil do GLS, 
+<img width="1920" height="837" alt="image" src="https://github.com/user-attachments/assets/7855ebcd-5f1c-42bc-920e-85a71bf4202c" />
+This is the GLS simulation for this RCA. 
