@@ -105,8 +105,19 @@ No latch will be infered here
 It follows redundancy theorem **a+a'b=a+b**
 <img width="2446" height="928" alt="image" src="https://github.com/user-attachments/assets/d04d8978-1c01-4832-9b8e-fac53d7f4577" />
 I.e. what we expected 
-
-
-
-
-
+In case, overlapping condition is also problem. Allcase statements are not mutually exclusive
+We will see file maned bad_case where where sel 2'b1? is included 
+<img width="1246" height="384" alt="image" src="https://github.com/user-attachments/assets/580d8726-caff-4c00-a89f-dc53e0c1a833" />
+Here we will get sim and synth mismatch 
+11 and 10 both conditions matching, tool is confused 
+<img width="2446" height="928" alt="image" src="https://github.com/user-attachments/assets/4f0f289c-2ec9-4db4-aa35-5e4761094c6c" />
+If we synthesise this, here no inferred latch as its a full case so no latches. Bt problem is there with overlapping case
+<img width="2464" height="948" alt="image" src="https://github.com/user-attachments/assets/7f730cf3-e021-4c9c-8398-79ca7a6b3b69" />
+Lets try GLS on this 
+<img width="1880" height="1512" alt="image" src="https://github.com/user-attachments/assets/ba0e14d7-d3b2-412c-93cf-da418d41a8ee" />
+Here its clean ie 00--> i0
+01 -->i1 
+10 -->i2
+11 -->i3
+No confussion here unlike RTL simulation 
+SUCH CODING PRACTICES SHOULD BE AVOIDED
