@@ -81,7 +81,7 @@ When i0 low, o/p looks toward i2. So in window when i0 , i2 both low, o/p is con
 <img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/fea23e5f-8bbe-44ec-b848-f8a14a7c6cf3" />
 so we got combo logic fxn of i0, i1, i3 and i2 i.e. we expected and enables of latch io ored with i2. If both i0, i2 0, it will latch 
 
-
+**Now lets see incomplete CASE statements**
 
 
 
