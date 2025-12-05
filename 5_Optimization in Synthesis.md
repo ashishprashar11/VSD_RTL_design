@@ -1,37 +1,25 @@
 **If, Case statements**
 If --> Used to creat the priority logic
 Syntax 
-**if <condition>                                
+if <condition>                                
    begin                                        
-     ___
-     ___
    end
 else
   begin
-     ___
-     ___
-   end**
+   end
 ________________
-**if <condition1> 
+if <condition1> 
    begin                                        
-     ___
-     ___
    end
 else if <condition2> 
    begin                   
-     ___                   
-     ___                
    end
   else if <condition3> 
    begin                                        
-     ___
-     ___
    end
 else
   begin
-     ___
-     ___
-   end**  
+   end
 ___________________________
 If will get highest priority. Only if not met, so to second if else, againn if not then next otherwise else
 In hardware it will be like the MUXES as show in PIC
